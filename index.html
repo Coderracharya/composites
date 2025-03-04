@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composite Material Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Composite Material Calculator</h1>
+
+        <form id="inputForm">
+            <div class="input-group">
+                <label for="E11">E11 (MPa):</label>
+                <input type="number" id="E11" required>
+            </div>
+
+            <div class="input-group">
+                <label for="E22">E22 (MPa):</label>
+                <input type="number" id="E22" required>
+            </div>
+
+            <div class="input-group">
+                <label for="G12">G12 (MPa):</label>
+                <input type="number" id="G12" required>
+            </div>
+
+            <div class="input-group">
+                <label for="niu12">ν12:</label>
+                <input type="number" id="niu12" step="0.01" required>
+            </div>
+
+            <div class="input-group">
+                <label for="theta">Fiber Orientations (comma-separated):</label>
+                <input type="text" id="theta" placeholder="e.g. 0, 45, -45, 90" required>
+            </div>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="resultContainer"></div>
+
+        <div class="footer">
+            <p>Developed by 
+                <a href="https://www.linkedin.com/in/coderracharya" target="_blank">@coderracharya</a>
+            </p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
